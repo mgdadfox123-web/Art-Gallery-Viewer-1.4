@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Art Work Search</title>
+
+    <link rel="stylesheet" href="variables-palette-7.css">
+    <link rel="stylesheet" href="searchstyle.css">
+</head>
+
+<body>
+
+    <header class="search-header">
+        
+    </header>
+
+    <main>
+    
+         <form class="search-section" method="GET" action="https://www.randyconnolly.com/tests/process.php">
+
+        <nav class="main-nav"><a href="proj1.html">Home</a></nav>  <h2>Advanced Art Work Search</h2>
+
+        <div class="search-row">
+
+        <input type="text" name="search"
+        placeholder="search titles...">
+
+        <div class="radio-options">
+            <label>
+                subject
+            </label>
+
+            <label>
+                <input type="radio" name="subject" value="3">
+                History
+            </label> 
+
+            <label>
+                <input type="radio" name="subject" value="2">
+                Person
+            </label>
+
+            <label>
+                <input type="radio" name="subject" value="1">
+                Landscape
+            </label>    
+            
+        </div>
+
+        <div class="genre-options">
+        <select name="genre">
+            <option value="0">Select Genre</option>
+            <option value="1">Baroque</option>
+            <option value="2">Renaissance</option>
+            <option value="3">Realism</option>
+        </select>
+
+        <button type="button" name="filter">Filter</button>
+        </div>
+
+        </div>
+
+        <div class="bulk-actions">
+        <select name="Actions">
+            <option value="0">Bulk Action</option>
+            <option value="1">Archive</option>
+            <option value="2">Edit</option>
+            <option value="3">Delete</option>
+            <option value="4">Collection</option>
+        </select>
+
+        <button type="button">Apply To All</button>
+
+        <button type="submit" style="margin-left: 80px;">Search</button>
+        </div>
+
+
+
+    <section class="paintings-section">
+
+      <table class="paintings-table">
+
+        <thead>
+
+            <tr>
+            <th colspan="8">Painting</th>
+            </tr>
+
+            <tr>
+                <th scope="col">Select</th>
+                <th scope="col"></th>
+                <th scope="col">paint</th>
+                <th scope="col">Title</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Year</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Actions</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+               <td>
+                    <input type="checkbox" name="index[]" value="20">
+               </td>
+
+               <td>
+                   <img src="images/hermitage2.jpg" alt="Painting">
+               </td>
+
+               <td>
+                   <img src="images/hermitage2.jpg" alt="Painting">
+               </td>    
+
+               <td>
+                    Portrait of Alida Christina Assink
+               </td>
+
+               <td>
+                    Kusea
+               </td>
+
+               <td>
+                    1933
+               </td>
+
+               <td>
+                   Realim
+               </td>
+
+               <td>
+                  <button type="button">
+                     <img src="images/Edit.png" alt="Edit">
+                  </button>
+
+                  <button type="button">
+                     <img src="images/View.png" alt="view">
+                  </button>        
+
+                  <button type="button">
+                     <img src="images/Delete.png" alt="Delete">
+                  </button>
+                </td>
+
+            </tr>
+
+            <tr>
+               <td>
+                    <input type="checkbox" name="index[]" value="30">
+               </td>
+
+               <td>
+                   <img src="images/louvre1.jpg" alt="Painting">
+               </td>
+
+               <td>
+                   <img src="images/louvre1.jpg" alt="Painting">
+               </td>    
+
+               <td>
+                    Portrait of Willem,King of the Netl
+               </td>
+
+               <td>
+                    Kusea
+               </td>
+
+               <td>
+                    1039
+               </td>
+
+               <td>
+                   Realim
+               </td>
+
+               <td>
+                  <button type="button">
+                     <img src="images/Edit.png" alt="Edit">
+                  </button>
+
+                  <button type="button">
+                     <img src="images/View.png" alt="view">
+                  </button>        
+
+                  <button type="button">
+                     <img src="images/Delete.png" alt="Delete">
+                  </button>
+                </td>
+
+            </tr>
+            
+            <tr>
+               <td>
+                    <input type="checkbox" name="index[]" value="40">
+               </td>
+
+               <td>
+                   <img src="images/rijks1.jpg" alt="Painting">
+               </td>
+
+               <td>
+                   <img src="images/rijks1.jpg" alt="Painting">
+               </td>    
+
+               <td>
+                    two girl from the Amsterdam
+               </td>
+
+               <td>
+                    Bchbrt....Thoarte
+               </td>
+
+               <td>
+                    1130
+               </td>
+
+               <td>
+                   Realim
+               </td>
+
+               <td>
+                  <button type="button">
+                     <img src="images/Edit.png" alt="Edit">
+                  </button>
+
+                  <button type="button">
+                     <img src="images/View.png" alt="view">
+                  </button>        
+
+                  <button type="button">
+                     <img src="images/Delete.png" alt="Delete">
+                  </button>
+                </td>
+
+            </tr>
+            
+            <tr>
+               <td>
+                    <input type="checkbox" name="index[]" value="50">
+               </td>
+
+               <td>
+                   <img src="images/nga2.jpg" alt="Painting">
+               </td>
+
+               <td>
+                   <img src="images/nga2.jpg" alt="Painting">
+               </td>    
+
+               <td>
+                    the Eimdmil at Wjk bij Duursted
+               </td>
+
+               <td>
+                    rusida... Jacob
+               </td>
+
+               <td>
+                    1922
+               </td>
+
+               <td>
+                   Dutck Gc
+               </td>
+
+               <td>
+                  <button type="button">
+                     <img src="images/Edit.png" alt="Edit">
+                  </button>
+
+                  <button type="button">
+                     <img src="images/View.png" alt="view">
+                  </button>        
+
+                  <button type="button">
+                     <img src="images/Delete.png" alt="Delete">
+                  </button>
+                </td>
+
+            </tr>
+            
+            <tr>
+               <td>
+                    <input type="checkbox" name="index[]" value="60">
+               </td>
+
+               <td>
+                   <img src="images/brera4.jpg" alt="Painting">
+               </td>
+
+               <td>
+                   <img src="images/brera4.jpg" alt="Painting">
+               </td>    
+
+               <td>
+                    morning ride along the beach
+               </td>
+
+               <td>
+                    Mauye... Anton
+               </td>
+
+               <td>
+                    1942
+               </td>
+
+               <td>
+                   Realim
+               </td>
+
+               <td>
+                  <button type="button">
+                     <img src="images/Edit.png" alt="Edit">
+                  </button>
+
+                  <button type="button">
+                     <img src="images/View.png" alt="view">
+                  </button>        
+
+                  <button type="button">
+                     <img src="images/Delete.png" alt="Delete">
+                  </button>
+                </td>
+
+            </tr>            
+            
+        </tbody>
+
+      </table>
+
+    </section>
+  </form>  
+
+    </main>
+
+</body>
+
+</html>

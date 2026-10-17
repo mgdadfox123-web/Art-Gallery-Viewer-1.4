@@ -1,0 +1,305 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+.search-section h2 {
+    margin: 0;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--color-primary-1-800);
+    color: white;
+    font-size: var(--header-font-size,24px);
+    font-weight: bold;
+}
+
+
+/* Navigation */
+.main-nav {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    padding: 8px 14px;
+    background-color: var(--color-primary-1-300);
+    border-radius: 4px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.search-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 25px 20px;
+    background-color: var(--color-neutral-100);
+}
+
+/* Search box */
+.search-row input[type="text"] {
+    width: 32%;
+    padding: 10px;
+    border: 1px solid var(--color-neutral-300);
+    background-color: white;
+    font-size: 14px;
+}
+
+/* Radio buttons */
+.radio-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.radio-options label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-neutral-800);
+}
+
+/* Genre */
+.genre-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-section select {
+    padding: 10px;
+    border: 1px solid var(--color-neutral-300);
+    background-color: white;
+    font-size: 14px;
+}
+
+/* Buttons */
+.search-section button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-primary-1-500);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: var(--color-primary-1-700);
+}
+
+
+.bulk-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 90px;
+    padding: 20px;
+    background-color: var(--color-neutral-100);
+    border-top: 1px solid var(--color-neutral-200);
+}
+
+
+
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: var(--color-neutral-050);
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Table main heading */
+thead tr:first-child,
+table caption {
+    background-color: var(--color-primary-1-800);
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    height: 60px;
+    font-size: 22px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Table column headings */
+thead tr:nth-child(2) th {
+    background-color: var(--color-primary-1-050);
+    color: var(--color-neutral-800);
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid var(--color-neutral-200);
+}
+
+/* Table cells */
+td {
+    padding: 12px;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--color-neutral-200);
+    color: var(--color-neutral-800);
+    font-size: 14px;
+}
+
+/* Table rows */
+tbody tr {
+    background-color: var(--color-neutral-050);
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: var(--color-primary-1-050);
+}
+
+/* Table images */
+td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--color-neutral-200);
+    display: block;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: var(--color-primary-1-600);
+}
+
+/* Action buttons */
+td button {
+    background-color: var(--color-primary-1-300);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 8px;
+    margin-right: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+td button:hover {
+    background-color: var(--color-primary-1-500);
+}
+
+td button:nth-child(1) {
+    background-color: var(--color-primary-1-400);
+}
+
+td button:nth-child(2),
+td button:nth-child(3) {
+    background-color: var(--color-neutral-200);
+}
+
+/* Images inside action buttons */
+td button img {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 0;
+    object-fit: contain;
+}
+
+
+
+@media screen and (max-width: 480px){
+    .search-row {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.search-row input[type="text"] {
+    width: 100%;
+}
+
+.radio-options {
+    flex-wrap: wrap;
+}
+
+.genre-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.genre-options select,
+.genre-options button {
+    width: 100%;
+}
+
+.bulk-actions {
+    flex-wrap: wrap;
+}
+
+.bulk-actions select,
+.bulk-actions button {
+    max-width: 100%;
+}
+
+.paintings-section {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.paintings-table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: auto;
+}
+
+.paintings-table th,
+.paintings-table td {
+    padding: 6px;
+    font-size: 12px;
+}
+
+.paintings-table td img {
+    max-width: 100%;
+    height: auto;
+}
+    
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    :root {
+        --header-font-size: 2em;
+        --header-height: 5em;
+    }
+
+    body > a {
+        width: 45%;
+    }
+}
